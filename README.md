@@ -75,3 +75,23 @@ Evaluate the metrics
 
 ### Inference & visualization
 You can just allow the inference.py which contains a visualization of the test images and a visualization of the confusion matrix.
+
+## Citation
+If you find CDFormer useful or inspiring, please consider citing:
+
+```bibtex
+@misc{meng2025cdformercrossdomainfewshotobject,
+      title={CDFormer: Cross-Domain Few-Shot Object Detection Transformer Against Feature Confusion}, 
+      author={Boyuan Meng and Xiaohan Zhang and Peilin Li and Zhe Wu and Yiming Li and Wenkai Zhao and Beinan Yu and Hui-Liang Shen},
+      year={2025},
+      eprint={2505.00938},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.00938}, 
+}
+```
+
+## Acknowledgement
+Our proposed CDFormer is heavily inspired by many outstanding prior works, including [Deformable DETR](https://arxiv.org/pdf/2010.04159), [CDMM-FSOD](https://arxiv.org/pdf/2502.16469), and [CD-ViTO](https://arxiv.org/pdf/2402.03094)
+
+Thanks for their work.
