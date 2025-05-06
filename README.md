@@ -46,7 +46,7 @@ code_root/
             └── 10_shot.json/
 ```
 
-## Pre-Trained Model Weights
+#### Pre-Trained Model Weights
 
 - DINOv2 ViTL/14 model:&nbsp;&nbsp; click [here](https://github.com/facebookresearch/dinov2) to download. Please put it in model_pt/dinov2
 
