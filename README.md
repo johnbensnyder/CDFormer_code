@@ -1,4 +1,3 @@
-&nbsp;
 ### Pre-Requisites
 You must have NVIDIA GPUs to run the codes.
 
@@ -9,7 +8,7 @@ The implementation codes are developed and tested with the following environment
 - PyTorch == 2.3.1+cu118, TorchVision == 0.18.1+cu118
 - GCC == 11.4.0
 - cython, pycocotools, tqdm, scipy, opencv-python
-&nbsp;
+
 
 ### Deformable attention compile
 ```bash
@@ -19,8 +18,6 @@ cd ./models/ops
 sh ./make.sh
 python test.py  # unit test (should see all checking is True)
 ```
-
-&nbsp;
 
 ### Data Preparation
 
@@ -48,13 +45,11 @@ code_root/
             ├── 5_shot.json/
             └── 10_shot.json/
 ```
-&nbsp;
 
 ## Pre-Trained Model Weights
 
 - DINOv2 ViTL/14 model:&nbsp;&nbsp; click [here](https://github.com/facebookresearch/dinov2) to download. Please put it in model_pt/dinov2
 
-&nbsp;
 ### Base Training
 run the commands below to start base training.
 ```bash
