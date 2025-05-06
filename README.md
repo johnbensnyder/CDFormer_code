@@ -57,11 +57,12 @@ GPUS_PER_NODE=4 ./tools/run_dist_launch.sh 4  nohup ./scripts/basetrain.sh >/dev
 ```
 
 ### Cross-domain Few-Shot Finetuning
+```
 We have chosen different tuning epochs for different datasets, so please adjust the parameters epoch, save_every_epoch, eval_every_epoch, save_every_epoch in fstinune.sh.
 Dataset | ArTaxOr | Clipart | DIOR | Deepfish | NEU-DET | UODD |
 epoch   |   70    |    30   |  190 |    15    |   140   |  50  |
 In addition, we did not fine-tune the hyperparameters due to limited computational resources.
-
+```
 ```bash
 GPUS_PER_NODE=2 ./tools/run_dist_launch.sh 2  nohup ./scripts/fsfinetune.sh >/dev/null 2>&1 &
 ```
