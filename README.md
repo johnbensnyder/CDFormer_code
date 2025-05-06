@@ -1,3 +1,16 @@
+# CDFormer: Cross-Domain Few-Shot Object Detection Transformer Against Feature Confusion
+
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on?p=cdformer-cross-domain-few-shot-object)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on-1)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on-1?p=cdformer-cross-domain-few-shot-object)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on-3)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on-3?p=cdformer-cross-domain-few-shot-object)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on-2)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on-2?p=cdformer-cross-domain-few-shot-object)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on-neu)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on-neu?p=cdformer-cross-domain-few-shot-object)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cdformer-cross-domain-few-shot-object/cross-domain-few-shot-object-detection-on-4)](https://paperswithcode.com/sota/cross-domain-few-shot-object-detection-on-4?p=cdformer-cross-domain-few-shot-object)
+
+
+**In this paper**, our key contributions: 
+1) While CD-ViTO demonstrates significant performance degradation in open-set detection on the CD-FSOD benchmark, our network exhibits notable domain robustness.
+2) Our single-stage framework with fixed classification heads achieves arbitrary-class inference capability through the introduction of background placeholders.
+3) We propose highly effective object-object distinguishing and object-background distinguishing strategies.
+
+
+
 ### Pre-Requisites
 You must have NVIDIA GPUs to run the codes.
 
