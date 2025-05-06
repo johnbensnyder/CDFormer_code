@@ -20,13 +20,6 @@ from engine import evaluate, train_one_epoch
 from models import build_model
 
 torch.backends.cudnn.benchmark = False
-"""
-target['area']在dataset和dataset_support中均有可能出现问题，如uodd、clipart、artaxor中
-dataset_support:
-if target['boxes'].shape[0] == 1 and target['area'] >= original_target['area'] / 5.0:
-dataset:
-if support_target['boxes'].shape[0] == 1 and support_target['area'] >= org_support_target['area'] / 5.0:
-"""
 
 def get_args_parser():
     parser = argparse.ArgumentParser('CDFormer', add_help=False)
