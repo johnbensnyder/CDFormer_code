@@ -2,7 +2,7 @@
 
 source /opt/anaconda3/etc/profile.d/conda.sh
 # conda info --env
-conda activate zxh
+conda activate cdformer
 
 # 设置要使用的 GPU 为 GPU 4
 export CUDA_VISIBLE_DEVICES=2,3
