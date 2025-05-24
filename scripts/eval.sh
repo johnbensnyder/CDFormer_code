@@ -7,7 +7,7 @@ fewshot_seed=01
 num_shot=10
 
 python -u main.py \
---dataset_file dataset2 \
+--dataset_file uodd \
 --backbone dinov2 \
 --num_feature_levels 1 \
 --enc_layers 6 \
@@ -15,7 +15,7 @@ python -u main.py \
 --hidden_dim 256 \
 --num_queries 300 \
 --batch_size 2 \
---resume checkpoint0009.pth \
+--resume base_train.pth \
 --fewshot_finetune \
 --fewshot_seed ${fewshot_seed} \
 --num_shots ${num_shot} \
