@@ -19,7 +19,6 @@ python -u main.py \
 --fewshot_finetune \
 --fewshot_seed ${fewshot_seed} \
 --num_shots ${num_shot} \
---category_codes_cls_loss \
 --eval \
 2>&1 | tee ./log_inference_base_0.txt
 ```
