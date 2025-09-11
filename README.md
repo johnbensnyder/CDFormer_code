@@ -63,6 +63,7 @@ code_root/
 
 - DINOv2 ViTL/14 model: click [here](https://github.com/facebookresearch/dinov2) to download. Please put it in model_pt/dinov2
 - The pre-training weights we provide on COCO (It is recommended to train by yourself. Replacing with [CDFormer_beifen.py] may result in higher metrics, but fine-tuning epochs may not be consistent with the current setting): click [here](https://pan.baidu.com/s/1eoe9dkjNlqeQ75aD5PNLOA?pwd=w628) to download(百度网盘).
+- You can download our weights and directly conduct the w/o FT test, no need to finetune, as an open-set object detection task!
 
 ### Base Training
 run the commands below to start base training.
@@ -71,9 +72,9 @@ GPUS_PER_NODE=4 ./tools/run_dist_launch.sh 4  nohup ./scripts/basetrain.sh >/dev
 ```
 
 ### Cross-domain Few-Shot Finetuning
+##### IMPORTANT: Epochs for reference only, specific epochs may need to be adjusted!
 ```
 We have chosen different tuning epochs for different datasets, so please adjust the parameters epoch, save_every_epoch, eval_every_epoch, save_every_epoch in fstinune.sh.
-For reference only, specific epochs may need to be adjusted
 Dataset | ArTaxOr | Clipart | DIOR | Deepfish | NEU-DET | UODD |
 epoch   |   160    |    30   |  190 |    15    |   140   |  50  |
 In addition, we did not fine-tune the hyperparameters due to limited computational resources.
