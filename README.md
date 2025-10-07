@@ -150,4 +150,9 @@ unzip -qq annotations_trainval2017.zip
 rm train2017.zip
 rm val2017.zip
 rm annotations_trainval2017.zip
+
+cd ../..
+mkdir -p model_pt/dinov2
+cd model_pt/dinov2
+wget https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth
 ```

@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-source /opt/anaconda3/etc/profile.d/conda.sh
-conda activate cdformer
+source activate cdformer
 
 EXP_DIR=exps/CDFormer_dinov2
 BASE_TRAIN_DIR=${EXP_DIR}/base_train
@@ -17,7 +16,7 @@ python -u main.py \
     --dec_layers 6 \
     --hidden_dim 256 \
     --num_queries 300 \
-    --batch_size 8 \
+    --batch_size 4 \
     --epoch 50 \
     --lr_drop_milestones 45 \
     --save_every_epoch 5 \

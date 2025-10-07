@@ -200,14 +200,14 @@ def build_dataset(image_set, args):
     # For training set, we use dataset with support to construct meta-tasks
     if image_set == 'train':
         if args.dataset_file == 'coco':
-            root = Path('/home/csy/datasets/mscoco')
+            root = Path('data/COCO')
             img_folder = root / "train2017"
             ann_file = root / "annotations" / 'instances_train2017.json'
             class_ids = coco_base_class_ids + coco_novel_class_ids
             class_ids.sort()
             return build(args, img_folder, ann_file, image_set, activated_class_ids=class_ids, with_support=True)
         if args.dataset_file == 'coco_base':
-            root = Path('data/coco')
+            root = Path('data/COCO')
             img_folder = root / "train2017"
             ann_file = root / "annotations" / 'instances_train2017.json'
             return build(args, img_folder, ann_file, image_set, activated_class_ids=coco_base_class_ids, with_support=True)
@@ -237,7 +237,7 @@ def build_dataset(image_set, args):
     # For valid set, we do not need support dataset.
     if image_set == 'val':
         if args.dataset_file in ['coco', 'coco_base']:
-            root = Path('/home/csy/datasets/mscoco')
+            root = Path('data/COCO')
             img_folder = root / "val2017"
             ann_file = root / "annotations" / 'instances_val2017.json'
             class_ids = coco_base_class_ids + coco_novel_class_ids

@@ -65,7 +65,7 @@ def build(args, image_set, activated_class_ids, with_support=True):
 
     if args.dataset_file in ['coco_base']:
         root = Path('data/coco_fewshot')
-        img_folder = "/home/csy/datasets/mscoco/train2017"
+        img_folder = "data/COCO/train2017"
         ann_file = root / f'seed{args.fewshot_seed}' / f'{args.num_shots}shot.json'
         return DetectionDataset(args, img_folder, str(ann_file),
                                 transforms=make_transforms(),

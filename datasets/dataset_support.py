@@ -235,7 +235,7 @@ def build_support_dataset(image_set, args):
     if not args.fewshot_finetune:
         assert image_set == "train"
         if args.dataset_file == 'coco':
-            root = Path('/home/csy/datasets/mscoco')
+            root = Path('data/COCO')
             img_folder = root / "train2017"
             ann_file = root / "annotations" / "instances_train2017.json"
             return SupportDataset(img_folder, ann_file,
@@ -245,7 +245,7 @@ def build_support_dataset(image_set, args):
                                   local_rank=get_local_rank(),
                                   local_size=get_local_size())
         if args.dataset_file == 'coco_base':
-            root = Path('/home/csy/datasets/mscoco')
+            root = Path('data/COCO')
             img_folder = root / "train2017"
             ann_file = root / "annotations" / "instances_train2017.json"
             return SupportDataset(img_folder, ann_file,
@@ -315,7 +315,7 @@ def build_support_dataset(image_set, args):
 
         if args.dataset_file == 'coco_base':
             root = Path('data/coco_fewshot')
-            img_folder = "/home/csy/datasets/mscoco/train2017"
+            img_folder = "data/COCO/train2017"
             ids = (coco_base_class_ids + coco_novel_class_ids)
             ids.sort()
             ann_file = root / f'seed{args.fewshot_seed}' / f'{args.num_shots}shot.json'

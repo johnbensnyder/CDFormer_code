@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-source /opt/anaconda3/etc/profile.d/conda.sh
 # conda info --env
 conda activate cdformer
 

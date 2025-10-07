@@ -160,7 +160,7 @@ def main(args):
 
     image_set = 'val'
     if args.dataset_file in ['coco', 'coco_base']:
-        root = Path('/home/csy/datasets/mscoco')
+        root = Path('data/COCO')
         img_folder = root / "val2017"
         ann_file = root / "annotations" / 'instances_val2017.json'
         class_ids = coco_base_class_ids + coco_novel_class_ids
