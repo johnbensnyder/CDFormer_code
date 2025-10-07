@@ -111,3 +111,43 @@ If you find CDFormer useful or inspiring, please consider citing:
 Our proposed CDFormer is heavily inspired by many outstanding prior works, including [Deformable DETR](https://arxiv.org/pdf/2010.04159), [CDMM-FSOD](https://arxiv.org/pdf/2502.16469), and [CD-ViTO](https://arxiv.org/pdf/2402.03094)
 
 Thanks for their work.
+
+## PyTorch 2 env setup on SageMaker Studio
+
+```
+conda env create -f cd_former_env.yml
+source activate 
+
+cd data
+gdown 12bN2vdeIRi_qb7azZgbzMOGjlz2jf-em
+gdown 1jY5ZmqlKGsImYrkGOvLErfxA02KGLu1h
+gdown 1Y7NEUZ4IJjHEvbmHuj0NcfnoVhvMasaW
+gdown 1o6XYbX8Bm6rp5KsdmZlDw1dSRGA_RGIv
+gdown 1OUgx12lDhYv1STlOTZzvg-zc-VIkJujU
+gdown 1b4LkDFcnorfZrCBzTTHjge4l2YzmfL0H
+
+tar -xzf ArTaxOr.tar.gz
+rm ArTaxOr.tar.gz
+tar -xzf UODD.tar.gz
+rm UODD.tar.gz
+tar -xzf DIOR.tar.gz 
+rm DIOR.tar.gz  
+tar -xzf FISH.tar.gz 
+rm FISH.tar.gz  
+tar -xzf NEU-DET.tar.gz 
+rm NEU-DET.tar.gz  
+tar -xzf clipart1k.tar.gz
+rm clipart1k.tar.gz
+
+mkdir COCO
+cd COCO
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/zips/val2017.zip
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+unzip -qq train2017.zip
+unzip -qq val2017.zip
+unzip -qq annotations_trainval2017.zip
+rm train2017.zip
+rm val2017.zip
+rm annotations_trainval2017.zip
+```

@@ -3,7 +3,7 @@ import json
 #CD-ViTO对于ArTaxOr数据集的json命名在本项目中无法解析，需要重新进行id映射
 
 # 加载JSON文件
-with open('data/ArTaxOr/annotations/5_shot.json', 'r') as f:
+with open('ArTaxOr/annotations/5_shot.json', 'r') as f:
     data = json.load(f)
 
 # 初始化计数器
@@ -26,7 +26,7 @@ for annotation in data['annotations']:
     annotation_id_counter += 1
 
 # 保存修改后的JSON文件
-with open('data/ArTaxOr/annotations/fixed_5_shot.json', 'w') as f:
+with open('ArTaxOr/annotations/fixed_5_shot.json', 'w') as f:
     json.dump(data, f)
 
 print("转换完成，保存为 'fixed_test.json'.")
