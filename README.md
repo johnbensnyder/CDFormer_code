@@ -116,7 +116,10 @@ Thanks for their work.
 
 ```
 conda env create -f cd_former_env.yml
-source activate 
+source activate cdformer
+
+cd models/ops
+python setup.py build install
 
 cd data
 gdown 12bN2vdeIRi_qb7azZgbzMOGjlz2jf-em

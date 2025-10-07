@@ -16,7 +16,7 @@ python -u main.py \
     --dec_layers 6 \
     --hidden_dim 256 \
     --num_queries 300 \
-    --batch_size 4 \
+    --batch_size 16 \
     --epoch 50 \
     --lr_drop_milestones 45 \
     --save_every_epoch 5 \
